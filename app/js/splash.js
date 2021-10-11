@@ -4,7 +4,7 @@ const win = gui.Window.get();
 const runApp= ()=>{
     nw.Window.open('app/index.html', {
         show:false,
-        frame: false,
+        frame: true,
         height: 650,
         width: 1200,
         position: "center"
