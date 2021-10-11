@@ -8,23 +8,23 @@ Build cross-platform desktop apps with JavaScript, HTML, and CSS
 ### Clone The Hello World Project repository
 
 ```console
-$ git clone https://github.com/ElMehdiLebbar/seule-desktop.git
+git clone https://github.com/ElMehdiLebbar/seule-desktop.git
 ```
 
 ### Go into the repository 
 
 ```console
-$ cd seule-desktop
+cd seule-desktop
 ```
 
 ### Install the dependencies
 
 ```console
-$ npm install
+npm install
 ```
 
 ### run the project
 
 ```console
-$ npm start
+npm start
 ```
