@@ -12,10 +12,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElMehdiLebbar/HelloWorld.git"
+    "url": "git+https://github.com/ElMehdiLebbar/seule-desktop.git"
   },
   "build": {
-    "appId": "com.github.ElMehdiLebbar.HelloWorld",
+    "appId": "com.github.ElMehdiLebbar.seule-desktop",
     "nwVersion": "0.57.1",
     "packed": true,
     "targets": [],
@@ -34,7 +34,7 @@
       "copyright": "copyright",
       "icon": "./assets/pd.icns",
       "plistStrings": {
-        "CFBundleIdentifier": "com.github.ElMehdiLebbar.HelloWorld",
+        "CFBundleIdentifier": "com.github.ElMehdiLebbar.seule-desktop",
         "CFBundleDocumentTypes": []
       }
     }
