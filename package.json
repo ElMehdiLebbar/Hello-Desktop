@@ -16,7 +16,7 @@
   },
   "build": {
     "appId": "com.github.ElMehdiLebbar.HelloWorld",
-    "nwVersion": "0.55.0",
+    "nwVersion": "0.57.1",
     "packed": true,
     "targets": [],
     "strippedProperties": [
