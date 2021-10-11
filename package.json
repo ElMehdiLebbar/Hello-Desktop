@@ -1,0 +1,61 @@
+{
+  "name": "hello.seule",
+  "version": "1.0.0",
+  "description": "Hello World Project to start with Seule Js Framework",
+  "main": "app/splash.html",
+  "scripts": {
+    "start": "run --x64 --mirror https://dl.nwjs.io/ .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "build --win --x64 --mirror https://npm.taobao.org/mirrors/nwjs/ ."
+  },
+  "author": "ElML",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElMehdiLebbar/HelloWorld.git"
+  },
+  "build": {
+    "appId": "com.github.ElMehdiLebbar.HelloWorld",
+    "nwVersion": "0.55.0",
+    "packed": true,
+    "targets": [],
+    "strippedProperties": [
+      "build"
+    ],
+    "outputPattern": "${NAME} ${VERSION} ${PLATFORM} ${ARCH}",
+    "win": {
+      "productName": "Hello World",
+      "companyName": "Process Skills",
+      "copyright": "copyright",
+      "icon": "./favicon.ico"
+    },
+    "mac": {
+      "displayName": "Hello World",
+      "copyright": "copyright",
+      "icon": "./assets/pd.icns",
+      "plistStrings": {
+        "CFBundleIdentifier": "com.github.ElMehdiLebbar.HelloWorld",
+        "CFBundleDocumentTypes": []
+      }
+    }
+  },
+  "devDependencies": {
+    "nwjs-builder-phoenix": "^1.9.3",
+    "typescript": "^2.2.1"
+  },
+  "window": {
+    "title": "Hello World",
+    "toolbar": true,
+    "frame": false,
+    "fullscreen": false,
+    "icon": "favicon.png",
+    "backgroundColor": "#fefefe",
+    "height": 286,
+    "width": 600,
+    "position": "center",
+    "show": false
+  },
+  "dependencies": {
+    "seule": "^1.1.3"
+  }
+}
