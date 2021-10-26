@@ -16,7 +16,7 @@
   },
   "build": {
     "appId": "com.github.ElMehdiLebbar.seule-desktop",
-    "nwVersion": "0.55.0",
+    "nwVersion": "0.58.0",
     "packed": true,
     "targets": [],
     "strippedProperties": [
