@@ -56,6 +56,6 @@
     "show": false
   },
   "dependencies": {
-    "seule": "^1.1.6"
+    "seule": "^1.1.7"
   }
 }
