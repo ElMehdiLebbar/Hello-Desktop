@@ -14,7 +14,7 @@ git clone https://github.com/ElMehdiLebbar/seule-desktop.git
 ### Go into the repository 
 
 ```console
-cd Hello-Desktop
+cd seule-desktop
 ```
 
 ### Install the dependencies
