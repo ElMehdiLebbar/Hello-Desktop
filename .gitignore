@@ -105,3 +105,6 @@ dist
 
 # dist folder
 .webpack
+
+#idea
+.idea
