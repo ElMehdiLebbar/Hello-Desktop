@@ -1,0 +1,20 @@
+/*Creating Global Variables*/
+
+:root {
+	--bg-color: #222;
+	--dark: #6c0ffd;
+	--light: #c200e3;
+	--text-color: #ffffff;
+}
+
+/*Change the color of the app background and Text*/
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	margin: 0;
+	padding: 0;
+}
+
+#app{
+	display: initial;
+}

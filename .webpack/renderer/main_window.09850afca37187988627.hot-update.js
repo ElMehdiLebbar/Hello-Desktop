@@ -1,0 +1,30 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdatehello_seule"]("main_window",{
+
+/***/ "./src/renderer.js":
+/*!*************************!*\
+  !*** ./src/renderer.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var seule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! seule */ \"./node_modules/seule/index.js\");\n/* harmony import */ var seule__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(seule__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/main.css */ \"./src/css/main.css\");\n/* harmony import */ var seule_model__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! seule/model */ \"./node_modules/seule/model/index.js\");\n/* harmony import */ var seule_model__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(seule_model__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n//Importing an Instance class from the Seule module to create new Seule Application\n\n\n//You can not use CSS files directly in html pages, but you can call it with _Css method\n\n\n\n(0,seule_model__WEBPACK_IMPORTED_MODULE_2__._Css)(_css_main_css__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n//Importing css for a specific application\n\n\nnew seule__WEBPACK_IMPORTED_MODULE_0__.Instance({\n    el: (\"#app\"),\n    style:_css_index_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"],\n    data:{\n        greeting: \"...\"\n    },\n    async handlers(app){\n        //For security reasons you cannot select element inside #app, otherwise we need to use Scope Selector\n        const {Scope} = await Promise.resolve(/*! import() */).then(__webpack_require__.t.bind(__webpack_require__, /*! seule/selectors */ \"./node_modules/seule/selectors/index.js\", 23));\n\n        //To use Seule events, we need to import Events function from events module\n        const {Events} = await __webpack_require__.e(/*! import() */ \"node_modules_seule_events_index_js\").then(__webpack_require__.t.bind(__webpack_require__, /*! seule/events */ \"./node_modules/seule/events/index.js\", 23));\n        //Initialize the event methods\n        Events();\n\n        const\n            scope = Scope(app),\n            btn = scope.Select(\"button\");\n\n        //The Click event occurs when the user clicks on the Button Element.\n        btn.Click(()=> {\n            //We can use our API in renderer.js by calling the window Object\n            const greeting_msg = window.myAPI.sayHello(\"El Mehdi\");\n        })\n\n\n    }\n})\n\n\n\n\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcmVuZGVyZXIuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBO0FBQytCOztBQUUvQjtBQUNxQzs7QUFFTDtBQUNoQyxpREFBSSxDQUFDLHFEQUFROztBQUViO0FBQ2lDOztBQUVqQyxJQUFJLDJDQUFRO0FBQ1o7QUFDQSxVQUFVLHNEQUFHO0FBQ2I7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBO0FBQ0EsZUFBZSxPQUFPLFFBQVEsNEpBQXlCOztBQUV2RDtBQUNBLGVBQWUsUUFBUSxRQUFRLGlNQUFzQjtBQUNyRDtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLFNBQVM7OztBQUdUO0FBQ0EsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2hlbGxvLnNldWxlLy4vc3JjL3JlbmRlcmVyLmpzPzViZDMiXSwic291cmNlc0NvbnRlbnQiOlsiLy9JbXBvcnRpbmcgYW4gSW5zdGFuY2UgY2xhc3MgZnJvbSB0aGUgU2V1bGUgbW9kdWxlIHRvIGNyZWF0ZSBuZXcgU2V1bGUgQXBwbGljYXRpb25cbmltcG9ydCB7SW5zdGFuY2V9IGZyb20gXCJzZXVsZVwiO1xuXG4vL1lvdSBjYW4gbm90IHVzZSBDU1MgZmlsZXMgZGlyZWN0bHkgaW4gaHRtbCBwYWdlcywgYnV0IHlvdSBjYW4gY2FsbCBpdCB3aXRoIF9Dc3MgbWV0aG9kXG5pbXBvcnQgbWFpbl9jc3MgZnJvbSBcIi4vY3NzL21haW4uY3NzXCJcblxuaW1wb3J0IHtfQ3NzfSBmcm9tIFwic2V1bGUvbW9kZWxcIlxuX0NzcyhtYWluX2Nzcyk7XG5cbi8vSW1wb3J0aW5nIGNzcyBmb3IgYSBzcGVjaWZpYyBhcHBsaWNhdGlvblxuaW1wb3J0IGNzcyBmcm9tIFwiLi9jc3MvaW5kZXguY3NzXCJcblxubmV3IEluc3RhbmNlKHtcbiAgICBlbDogKFwiI2FwcFwiKSxcbiAgICBzdHlsZTpjc3MsXG4gICAgZGF0YTp7XG4gICAgICAgIGdyZWV0aW5nOiBcIi4uLlwiXG4gICAgfSxcbiAgICBhc3luYyBoYW5kbGVycyhhcHApe1xuICAgICAgICAvL0ZvciBzZWN1cml0eSByZWFzb25zIHlvdSBjYW5ub3Qgc2VsZWN0IGVsZW1lbnQgaW5zaWRlICNhcHAsIG90aGVyd2lzZSB3ZSBuZWVkIHRvIHVzZSBTY29wZSBTZWxlY3RvclxuICAgICAgICBjb25zdCB7U2NvcGV9ID0gYXdhaXQgaW1wb3J0KFwic2V1bGUvc2VsZWN0b3JzXCIpO1xuXG4gICAgICAgIC8vVG8gdXNlIFNldWxlIGV2ZW50cywgd2UgbmVlZCB0byBpbXBvcnQgRXZlbnRzIGZ1bmN0aW9uIGZyb20gZXZlbnRzIG1vZHVsZVxuICAgICAgICBjb25zdCB7RXZlbnRzfSA9IGF3YWl0IGltcG9ydChcInNldWxlL2V2ZW50c1wiKTtcbiAgICAgICAgLy9Jbml0aWFsaXplIHRoZSBldmVudCBtZXRob2RzXG4gICAgICAgIEV2ZW50cygpO1xuXG4gICAgICAgIGNvbnN0XG4gICAgICAgICAgICBzY29wZSA9IFNjb3BlKGFwcCksXG4gICAgICAgICAgICBidG4gPSBzY29wZS5TZWxlY3QoXCJidXR0b25cIik7XG5cbiAgICAgICAgLy9UaGUgQ2xpY2sgZXZlbnQgb2NjdXJzIHdoZW4gdGhlIHVzZXIgY2xpY2tzIG9uIHRoZSBCdXR0b24gRWxlbWVudC5cbiAgICAgICAgYnRuLkNsaWNrKCgpPT4ge1xuICAgICAgICAgICAgLy9XZSBjYW4gdXNlIG91ciBBUEkgaW4gcmVuZGVyZXIuanMgYnkgY2FsbGluZyB0aGUgd2luZG93IE9iamVjdFxuICAgICAgICAgICAgY29uc3QgZ3JlZXRpbmdfbXNnID0gd2luZG93Lm15QVBJLnNheUhlbGxvKFwiRWwgTWVoZGlcIik7XG4gICAgICAgIH0pXG5cblxuICAgIH1cbn0pXG5cblxuXG5cblxuXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/renderer.js\n");
+
+/***/ })
+
+},
+/******/ function(__webpack_require__) { // webpackRuntimeModules
+/******/ /* webpack/runtime/getFullHash */
+/******/ (() => {
+/******/ 	__webpack_require__.h = () => ("e7f4fb3f930705694168")
+/******/ })();
+/******/ 
+/******/ }
+);

@@ -1,0 +1,96 @@
+{
+  "name": "hello.seule",
+  "version": "1.0.0",
+  "description": "Hello World Project to start with Seule Js Framework & ElectronJs",
+  "productName": "hello_seule",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": ["javascript", "html", "css", "desktop", "framework", "seule", "seuleJs", "electron", "webpack", "electronJs", "js"],
+  "author": {
+    "name": "El Mehdi Lebbar",
+    "email": "mehdi.labbar@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElMehdiLebbar/seule-desktop.git"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "./icon.ico",
+        "asar": true
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "hello_seule"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ],
+      "plugins": [
+        [
+          "@electron-forge/plugin-webpack",
+          {
+            "port": 5000,
+            "loggerPort": 9000,
+            "mainConfig": "./webpack.main.config.js",
+            "devContentSecurityPolicy": "connect-src self * 'unsafe-inline' blob: data: gap:",
+            "renderer": {
+              "config": "./webpack.renderer.config.js",
+              "entryPoints": [
+                {
+                  "html": "./src/index.html",
+                  "js": "./src/renderer.js",
+                  "name": "main_window",
+                  "preload": {
+                    "js": "./src/preload.js"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.63",
+    "@electron-forge/maker-deb": "^6.0.0-beta.63",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
+    "@electron-forge/maker-zip": "^6.0.0-beta.63",
+    "@electron-forge/plugin-webpack": "6.0.0-beta.63",
+    "@vercel/webpack-asset-relocator-loader": "1.7.2",
+    "css-loader": "^6.0.0",
+    "electron": "18.2.2",
+    "html-loader": "^3.1.0",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.0.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "1.0.0",
+    "seule": "2.0.8"
+  }
+}
