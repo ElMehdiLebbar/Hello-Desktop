@@ -91,6 +91,6 @@
   },
   "dependencies": {
     "electron-squirrel-startup": "1.0.0",
-    "seule": "2.0.8"
+    "seule": "2.1.4"
   }
 }
